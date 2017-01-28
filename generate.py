@@ -44,8 +44,10 @@ def my_render(parms):
   f.close()
 
   print( "... rendering " + output_target + "/boot/preseed/preseed.cfg" )
+  path = output_target + "/boot/preseed"
+  os.makedirs( path )
   template = templateEnv.get_template( "preseed.cfg.jinja" )
-  f = open( output_target + "/boot/preseed/preseed.cfg", "w" )
+  f = open( path + "/preseed.cfg", "w" )
   f.write( template.render( parms ) )
   f.close()
 

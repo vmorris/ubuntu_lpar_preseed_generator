@@ -1,12 +1,14 @@
 # Ubuntu LPAR (s390x) Installation Preseed Generator script
 
-## Use a python virtual environment to keep your environment clean:
-'''
+## Use a python virtual environment to keep your environment clean.
+Currently we're only using jinja2 here.
+
+```
 $ virtualenv preseeder; cd preseeder/; source bin/activate
 (preseeder)[preseeder]$ git clone https://github.com/vmorris/ubuntu_lpar_preseed_generator.git
 (preseeder)[preseeder]$ cd ubuntu_lpar_preseed_generator/
 (preseeder)[ubuntu_lpar_preseed_generator]$ pip install -r requirements.txt
-'''
+```
 
 ## Usage:
 TODO: give better description using the example inputs
